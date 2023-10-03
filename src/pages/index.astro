@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>🌺 cutie zone</title>
+  </head>
+  <body>
+    <main class="container select-none h-screen w-screen flex flex-col justify-center items-center text-center gap-5">
+      <h2 class="text-xl font-bold">oh no! you've been banished to the</h2>
+      <h1 class="text-4xl font-bold">🌺 cutie zone 🌺</h1>
+      <h3 class="text-xl font-bold">you are too cute for your previous zone and must remain in this one</h3>
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    background: linear-gradient(to bottom right, #3fe3ca, #9f3fe3);
+    color: #f9f9f9;
+    background-size: 120% 120%;
+    animation: gradient-animation 6s ease infinite;
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+</style>
