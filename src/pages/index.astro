@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <title>🌺 cutie zone</title>
+    <link rel="icon" href="favicon.svg" />
+    <title>cutie zone</title>
   </head>
   <body>
     <main
       class="absolute left-1/2 top-1/2 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col gap-6 text-center"
     >
-      <h2 class="text-xl font-bold">
-        oh no! you've been banished to the
-      </h2>
-      <h1 class="text-4xl font-bold">🌺 cutie zone 🌺</h1>
-      <h3 class="text-xl font-bold">
+      <div class="text-xl">oh no! you've been banished to the</div>
+      <div class="text-4xl">🌺 cutie zone 🌺</div>
+      <div class="text-xl">
         you are too cute for your previous zone and must remain in this one
-      </h3>
+      </div>
     </main>
   </body>
 </html>
@@ -41,5 +40,9 @@
     100% {
       background-position: 0% 50%;
     }
+  }
+
+  div {
+    @apply font-bold text-pink-100 shadow-pink-950 drop-shadow-lg;
   }
 </style>
